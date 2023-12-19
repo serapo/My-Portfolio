@@ -2,6 +2,7 @@
 import Avatar from "@mui/material/Avatar";
 import img from "../assets/profileImg.jpeg";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 function AboutMe() {
   return (

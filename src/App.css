@@ -11,10 +11,10 @@
 }
 
 #arkaplan2 {
-  background-image: url("https://media.istockphoto.com/id/1097712586/tr/foto%C4%9Fraf/golden-retriever-k%C3%B6pek-ve-ingiliz-k%C4%B1sa-sa%C3%A7l%C4%B1-kedi.jpg?s=2048x2048&w=is&k=20&c=l0hon-iEcorZ1ke-F_D-vnCg8u5fMLOEn-HPJb5yyHQ=");
+  background-color: black;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  opacity: 0.6;
+
 }

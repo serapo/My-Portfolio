@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Main from "./Main";
-import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -23,7 +22,7 @@ function MenuNavBar() {
           color: "white",
         }}
       >
-        <AppBar component="nav" sx={{ backgroundColor: "black" ,   height: "5vh",}}>
+        <Box component="nav" variant="overline" sx={{ backgroundColor: "black" ,   height: "5vh",}}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -46,7 +45,8 @@ function MenuNavBar() {
               ))}
             </Box>
           </Toolbar>
-        </AppBar>
+        </Box>
+        
         <Main />
       </Box>
     </ThemeProvider>
