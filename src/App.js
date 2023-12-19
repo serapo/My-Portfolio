@@ -1,23 +1,30 @@
 import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import MenuNavBar from "./components/MenuNavBar";
-import Main from "./components/Main";
 
-
+import './App.css';
 const theme = createTheme({
   palette: {
     background: {
-      default: "red",
+      default: "black",
+   
     },
   },
 });
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={{ ...theme, background: { default: "black" } }}>
+      <div className="arkaplan" id="arkaplan1">
+
       <MenuNavBar />
-     
-      <Main />
+    
+      </div>
+      <div className="arkaplan" id="arkaplan2">
+
+      <MenuNavBar />
+ 
+      </div>
     </ThemeProvider>
   );
 }
