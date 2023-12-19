@@ -10,15 +10,17 @@ function MenuNavBar() {
     <ThemeProvider theme={theme}>
       <Box
         sx={{
-          textAlign: "left",
+          textAlign: "right",
           backgroundColor: "#F3F3F3",
           padding: 0,
           margin: 0,
         }}
       >
         <Typography>
-          Serap ORAL
-          <Typography variant="caption"> Frontend Developer</Typography>
+         Home
+          <Typography variant="caption"> About</Typography>
+          <Typography variant="caption"> Projects</Typography>
+          <Typography variant="caption"> Contact</Typography>
         </Typography>
       </Box>
     </ThemeProvider>
