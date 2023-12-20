@@ -20,6 +20,7 @@ function MenuNavBar() {
           padding: 0,
           margin: 0,
           color: "white",
+          width: "100%",
         }}
       >
         <Box component="nav" variant="overline" sx={{ backgroundColor: "black" ,   height: "5vh",}}>
