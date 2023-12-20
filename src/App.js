@@ -5,6 +5,8 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import MenuNavBar from "./components/MenuNavBar";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import CurrentProjects from "./components/CurrentProjects";
+import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -27,6 +29,12 @@ function App() {
       </div>
       <div className="arkaplan" id="arkaplan3">
         <Skills />
+      </div>
+      <div className="arkaplan" id="arkaplan4">
+        <CurrentProjects />
+      </div>
+      <div className="arkaplan" id="arkaplan5">
+        <Projects />
       </div>
     </ThemeProvider>
   );
