@@ -4,6 +4,7 @@ import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import MenuNavBar from "./components/MenuNavBar";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
 
 import "./App.css";
 
@@ -23,6 +24,9 @@ function App() {
       </div>
       <div className="arkaplan" id="arkaplan2">
         <AboutMe />
+      </div>
+      <div className="arkaplan" id="arkaplan3">
+        <Skills />
       </div>
     </ThemeProvider>
   );
