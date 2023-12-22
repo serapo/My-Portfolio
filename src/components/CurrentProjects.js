@@ -3,7 +3,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import PmpPlusImage from "../assets/pmpplus.png";
-import Grid from "@mui/material/Grid";
+import MarketPlace from "../assets/marketplace.png";
+
 function CurrentProjects() {
   return (
     <Box
@@ -28,7 +29,7 @@ function CurrentProjects() {
         />
       </Typography>
 
-      <Box sx={{ display: "flex", alignItems: "flex-start" }}>
+      <Box sx={{ display: "flex", alignItems: "flex-start", marginBottom:8 , marginTop:6 }}>
         <img
           src={PmpPlusImage}
           alt="PmpPlus"
@@ -36,7 +37,7 @@ function CurrentProjects() {
           height="150"
           style={{ borderRadius: "8px" }}
         />
-        <Box sx={{ marginLeft: 2, textAlign: "left", width: 500 }}>
+        <Box sx={{ marginLeft: 2, textAlign: "center", width: 500 }}>
           <Typography
             variant="h6"
             sx={{
@@ -50,6 +51,29 @@ function CurrentProjects() {
             and manage core business processes for optimal performance.
           </Typography>
         </Box>
+      </Box>
+
+      <Box sx={{ display: "flex", alignItems: "flex-start" }}>
+        <Box sx={{ marginLeft: 2, textAlign: "center", width: 500 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 2,
+            }}
+          >
+            Marketplace is a website that brings buyers together with sellers and serves as an intermediary between companies or individuals who want to sell their products or services.
+          </Typography>
+        </Box>
+        <img
+          src={MarketPlace}
+          alt="PmpPlus"
+          width="150"
+          height="150"
+          style={{ borderRadius: "8px" }}
+        />
       </Box>
     </Box>
   );
