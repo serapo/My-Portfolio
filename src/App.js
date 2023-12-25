@@ -6,7 +6,8 @@ import MenuNavBar from "./components/MenuNavBar";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import CurrentProjects from "./components/CurrentProjects";
-import Projects from "./components/Projects";
+import Project1 from "./components/Project/Project1";
+import Project2 from "./components/Project/Project2";
 
 import "./App.css";
 
@@ -34,7 +35,10 @@ function App() {
         <CurrentProjects />
       </div>
       <div className="arkaplan" id="arkaplan5">
-        <Projects />
+        <Project1 />
+      </div>
+      <div className="arkaplan" id="arkaplan5">
+        <Project2 />
       </div>
     </ThemeProvider>
   );

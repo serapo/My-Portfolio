@@ -2,11 +2,11 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import React from "react";
-import PmpPlusImage from "../assets/pmpplus.png";
+import LanguageCardImage from "../../assets/language_card.png";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-function Projects() {
+function Project2() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -14,10 +14,11 @@ function Projects() {
   };
 
   const handleTabClick = () => {
-    window.location.href = 'https://serapo.github.io/005-Weather-App/';
+    window.location.href = "https://serapo.github.io/Language_Card/";
   };
   const handleTabClickGithub = () => {
-    window.location.href = 'https://github.com/serapo/005-Weather-App?tab=readme-ov-file';
+    window.location.href =
+      "https://serapo.github.io/Language_Card/";
   };
   return (
     <Box
@@ -30,18 +31,6 @@ function Projects() {
         width: "50%",
       }}
     >
-      <Typography variant="h4" style={{ color: "white" }}>
-        PROJECTS
-        <Divider
-          sx={{
-            height: 4,
-            backgroundColor: "orange",
-            width: "25%",
-            margin: "auto",
-          }}
-        />
-      </Typography>
-
       <Box
         sx={{
           display: "flex",
@@ -51,10 +40,10 @@ function Projects() {
         }}
       >
         <img
-          src={PmpPlusImage}
+          src={LanguageCardImage}
           alt="PmpPlus"
-          width="150"
-          height="150"
+          width="200"
+          height="200"
           style={{ borderRadius: "8px" }}
         />
         <Box sx={{ marginLeft: 2, textAlign: "center", width: 500 }}>
@@ -64,10 +53,17 @@ function Projects() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 2,
+             
             }}
           >
-            Weather_Condition_App
+           Language_Card
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: "left",
+            }}
+          >
+           You can see the description of the software language you want by clicking on one of the cards on the home page.
           </Typography>
           <Tabs
             value={value}
@@ -81,8 +77,16 @@ function Projects() {
               },
             }}
           >
-            <Tab label="LIVE SITE" sx={{ color: "white"  ,cursor: 'pointer'}} onClick={handleTabClick} />
-            <Tab label="GITHUB" sx={{ color: 'white' ,cursor: 'pointer' }} onClick={handleTabClickGithub}/>
+            <Tab
+              label="LIVE SITE"
+              sx={{ color: "white", cursor: "pointer" }}
+              onClick={handleTabClick}
+            />
+            <Tab
+              label="GITHUB"
+              sx={{ color: "white", cursor: "pointer" }}
+              onClick={handleTabClickGithub}
+            />
           </Tabs>
         </Box>
       </Box>
@@ -90,4 +94,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Project2;
