@@ -23,7 +23,11 @@ function MenuNavBar() {
           width: "100%",
         }}
       >
-        <Box component="nav" variant="overline" sx={{ backgroundColor: "black" ,   height: "5vh",}}>
+        <Box
+          component="nav"
+          variant="overline"
+          sx={{ backgroundColor: "black", height: "5vh" }}
+        >
           <Toolbar>
             <IconButton
               color="inherit"
@@ -47,7 +51,7 @@ function MenuNavBar() {
             </Box>
           </Toolbar>
         </Box>
-        
+
         <Main />
       </Box>
     </ThemeProvider>

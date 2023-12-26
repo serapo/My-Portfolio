@@ -9,7 +9,7 @@ import CurrentProjects from "./components/CurrentProjects";
 import Project1 from "./components/Project/Project1";
 import Project2 from "./components/Project/Project2";
 import Project3 from "./components/Project/Project3";
-
+import Box from "@mui/material/Box";
 import "./App.css";
 
 const theme = createTheme({
@@ -28,27 +28,28 @@ function App() {
   };
   return (
     <ThemeProvider theme={{ ...theme, background: { default: "black" } }}>
-      <div ref={menuNavBarRef} className="arkaplan" id="arkaplan1">
-        <MenuNavBar />
-      </div>
-      <div className="arkaplan" id="arkaplan2">
+      <Box ref={menuNavBarRef} className="arkaplan" id="arkaplan1">
+        <MenuNavBar  />
+      </Box>
+      <Box className="arkaplan" id="arkaplan2" sx={{ borderBottom: 0 }}>
         <AboutMe />
-      </div>
-      <div className="arkaplan" id="arkaplan3">
+      </Box>
+      <Box className="arkaplan" id="arkaplan3">
         <Skills />
-      </div>
-      <div className="arkaplan" id="arkaplan4">
+      </Box>
+      <Box className="arkaplan" id="arkaplan4">
         <CurrentProjects />
-      </div>
-      <div className="arkaplan" id="arkaplan5">
+      </Box>
+      <Box className="arkaplan" id="arkaplan5">
         <Project1 />
-      </div>
-      <div className="arkaplan" id="arkaplan5">
+      </Box>
+
+      <Box className="arkaplan" id="arkaplan6">
         <Project2 />
-      </div>
-      <div className="arkaplan" id="arkaplan5">
-        <Project3  scrollToMenuNavBar={scrollToMenuNavBar}/>
-      </div>
+      </Box>
+      <Box className="arkaplan" id="arkaplan7">
+        <Project3 scrollToMenuNavBar={scrollToMenuNavBar} />
+      </Box>
     </ThemeProvider>
   );
 }
