@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 const theme = createTheme();
 
-const navItems = ["Home", "About", "Projects", "Contact"];
+const navItems = ["About", "Projects"];
 
 function MenuNavBar() {
   return (

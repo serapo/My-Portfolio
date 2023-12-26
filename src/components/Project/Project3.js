@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import LanguageCardImage from "../../assets/language_card.png";
+import menuImage from "../../assets/menu.jpeg";
 import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -15,10 +15,11 @@ function Project3({ scrollToMenuNavBar }) {
     setValue(newValue);
   };
   const handleTabClick = () => {
-    window.location.href = "https://serapo.github.io/Language_Card/";
+    window.location.href = "https://serapo.github.io/Menu-React-Project/";
   };
   const handleTabClickGithub = () => {
-    window.location.href = "https://serapo.github.io/Language_Card/";
+    window.location.href =
+      "https://github.com/serapo/Menu-React-Project?tab=readme-ov-file";
   };
 
   return (
@@ -33,65 +34,68 @@ function Project3({ scrollToMenuNavBar }) {
         cursor: "pointer",
       }}
       onClick={handleBackToTopClick}
-    > <Box
-    sx={{
-      display: "flex",
-      alignItems: "flex-start",
-      marginBottom: 8,
-      marginTop: 6,
-    }}
-  >
-    <img
-      src={LanguageCardImage}
-      alt="PmpPlus"
-      width="200"
-      height="200"
-      style={{ borderRadius: "8px" }}
-    />
-    <Box sx={{ marginLeft: 2, textAlign: "center", width: 500 }}>
-      <Typography
-        variant="h6"
+    >
+      {" "}
+      <Box
         sx={{
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          alignItems: "flex-start",
+          marginBottom: 8,
+          marginTop: 6,
         }}
       >
-        Language_Card
-      </Typography>
-      <Typography
-        sx={{
-          textAlign: "left",
-        }}
-      >
-        You can see the description of the software language you want by
-        clicking on one of the cards on the home page.
-      </Typography>
-      <Tabs
-        value={value1}
-        onChange={handleChange1}
-        centered
-        textColor="white"
-        TabIndicatorProps={{
-          style: {
-            backgroundColor: "orange",
-            color: "white",
-          },
-        }}
-      >
-        <Tab
-          label="LIVE SITE"
-          sx={{ color: "white", cursor: "pointer" }}
-          onClick={handleTabClick}
+        <img
+          src={menuImage}
+          alt="PmpPlus"
+          width="200"
+          height="200"
+          style={{ borderRadius: "8px" }}
         />
-        <Tab
-          label="GITHUB"
-          sx={{ color: "white", cursor: "pointer" }}
-          onClick={handleTabClickGithub}
-        />
-      </Tabs>
-    </Box>
-  </Box>
+        <Box sx={{ marginLeft: 2, textAlign: "center", width: 500 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Menu
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: "left",
+            }}
+          >
+            I have developed a website that serves as a platform for displaying
+            menus. The website is designed to provide users with an easy and
+            intuitive way to explore different menus for various purposes.
+          </Typography>
+          <Tabs
+            value={value1}
+            onChange={handleChange1}
+            centered
+            textColor="white"
+            TabIndicatorProps={{
+              style: {
+                backgroundColor: "orange",
+                color: "white",
+              },
+            }}
+          >
+            <Tab
+              label="LIVE SITE"
+              sx={{ color: "white", cursor: "pointer" }}
+              onClick={handleTabClick}
+            />
+            <Tab
+              label="GITHUB"
+              sx={{ color: "white", cursor: "pointer" }}
+              onClick={handleTabClickGithub}
+            />
+          </Tabs>
+        </Box>
+      </Box>
       <Typography
         variant="h6"
         sx={{
