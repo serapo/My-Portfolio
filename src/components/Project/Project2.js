@@ -125,8 +125,10 @@ function Project2() {
               textAlign: "center",
             }}
           >
-This project aims to display user information from a JSON file in a visually appealing way on a website. The user information is stored in a JSON file, and each user's details will be presented in the form of a card.
-
+            This project aims to display user information from a JSON file in a
+            visually appealing way on a website. The user information is stored
+            in a JSON file, and each user's details will be presented in the
+            form of a card.
           </Typography>
           <Tabs
             value={value}
