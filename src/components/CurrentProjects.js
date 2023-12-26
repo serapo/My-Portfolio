@@ -6,6 +6,9 @@ import PmpPlusImage from "../assets/pmpplus.png";
 import MarketPlace from "../assets/marketplace.png";
 
 function CurrentProjects() {
+  const handleTabClick = () => {
+    window.location.href = "https://market.intimeinfo.net/tr";
+  };
   return (
     <Box
       sx={{
@@ -29,7 +32,14 @@ function CurrentProjects() {
         />
       </Typography>
 
-      <Box sx={{ display: "flex", alignItems: "flex-start", marginBottom:8 , marginTop:6 }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          marginBottom: 8,
+          marginTop: 6,
+        }}
+      >
         <img
           src={PmpPlusImage}
           alt="PmpPlus"
@@ -64,8 +74,17 @@ function CurrentProjects() {
               marginTop: 2,
             }}
           >
-            Marketplace is a website that brings buyers together with sellers and serves as an intermediary between companies or individuals who want to sell their products or services.
+            Marketplace is a website that brings buyers together with sellers
+            and serves as an intermediary between companies or individuals who
+            want to sell their products or services.
+          
           </Typography>
+          <Typography
+              sx={{ color: "orange", cursor: "pointer" }}
+              onClick={handleTabClick}
+            >
+              LIVE SITE
+            </Typography>
         </Box>
         <img
           src={MarketPlace}
