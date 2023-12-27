@@ -7,7 +7,7 @@ My Portfolio Page
 <br/>
 
 
-[Portfolio Link](https://myportfolio-ashen-one.vercel.app/).
+[Portfolio Link](https://myportfolio-ashen-one.vercel.app/)
 
  
 
